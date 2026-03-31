@@ -1,0 +1,15 @@
+[package]
+name = "my-tauri-app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tauri = { version = "1.0", features = ["embedded"] }
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+crypto = "0.10"
+[indexer's]
+backend = "sqlite"
+
+[dev-dependencies]
+serde_json = "1.0"
